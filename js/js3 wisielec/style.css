@@ -1,0 +1,19 @@
+body{
+    background-color: #000;
+    color: lightgray;
+    font-size: 28px;
+}
+
+#container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#body{
+    float: left;
+}
+
+#alphabet{
+    float: left;
+}
