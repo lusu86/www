@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: x-large;
+    text-align: center;
+    background-color: #26282E;
+    color: #209781;
+    box-shadow: 0px 0px 10px gray;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color:#26282E;
+}
+
+.content {
+    width: 80vw;
+    margin: auto;
+    height: calc(100vh - 100px - 80px);
+    background-color: #26282E;
+}
+
+.footer {
+    width: 100vw;
+    height: 80px;
+    background-color:#26282E;
+}
+
+.TTimer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.timer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 500px;
+}
+
+.timer-Tabata{
+    width: 100%;
+    padding: 20px;
+    border: 20px inset black;
+}
+
+.timer-CyclesTabatas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.timer-item{
+    border: 20px inset black;
+    width: 100%;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 30vw;
+    padding: 0 2vw 0 2vw;
+}
+
+.settings-item {
+    background-color: burlywood;
+    margin: 5px 30px 5px;
+    position: relative;
+    text-align: left;
+}
+
+.settings-item::before, .settings-item::after{
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: darkblue;
+    text-align: center;
+}
+.settings-item::before{
+    content: var(--content,"-");
+    left: -30px
+}
+
+.settings-item:hover::before{
+    content: var(--content,"z");
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.settings-item::after{
+    content: '+';
+    right: -30px
+}
+
+.settings-item-start{
+    background-color: green;
+    margin: 10px;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+   .timer{
+       width: 100vw;
+       height: 300px;
+   }
+   .settings{
+       width: 100vw;
+       height: 40%;
+       padding: 0 5vw 0 5vw;
+   }
+  }

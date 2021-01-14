@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Matematyka w JS</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <script>
+
+        document.write(0.1*5); document.write("<br />");
+        document.write( ( 0.15*3)); document.write("<br />");
+        document.write( ( 0.1+0.2)); document.write("<br />");
+        document.write(Math.pow(2,3)); document.write("<br />");
+
+        var x;
+
+        x = Math.round((0.1 + 0.2)*10) /10;
+        document.write(x); document.write("<br />");
+
+        x = 0.15*3;
+        x = x.toFixed(2);
+        document.write(x); document.write("<br />");
+        
+        Number.prototype.round = function(miejsc){
+            return + (Math.round(this + "e+" + miejsc) + "e-"  +miejsc);
+        }
+
+        x = 1.005;
+        document.write(x.round(2)); document.write("<br />");
+    </script>
+</body>
+
+</html>
