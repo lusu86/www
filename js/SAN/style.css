@@ -67,6 +67,7 @@ body {
     list-style: none;
     width: 40vw;
     padding: 0 3vw 0;
+    cursor: default;
 }
 
 .settings-item {
@@ -93,40 +94,44 @@ body {
 
 .settings-ma{
     min-width: 30px;
-}
-
-
-
-/*.settings-item::before, .settings-item::after{
-
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: darkblue;
-    text-align: center;
-}
-.settings-item::before{
-    content: "-";
-    left: -30px
-}
-
-.settings-item:hover::before{
-    background-color: lightblue;
     cursor: pointer;
+    border: 2px solid rgb(37,40,42);
 }
 
-.settings-item::after{
-    content: '+';
-    right: -30px
+.settings-ma:hover{
+    border: 2px solid rgb(194, 194, 194);
+    background-color: rgb(106, 106, 107);
 }
-*/
-.settings-item-start{
+.btn-start{
     background-color: green;
+    border: 2px solid rgb(37,40,42);
     margin: 15px 8vw 15px;
     color: black;
     font-size: xx-large;
     font-weight: bold;
     border-radius: 10%;
+    cursor: pointer;
+}
+
+.btn-start:hover{
+    border: 2px solid rgb(49, 201, 29);
+    background-color: lightgreen;
+}
+
+.btn-stop{
+    background-color: rgb(196, 0, 0);
+    border: 2px solid rgb(37,40,42);
+    margin: 15px 8vw 15px;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.btn-stop:hover{
+    border: 2px solid rgb(255, 123, 123);
+    background-color: rgb(255, 0, 0);
 }
 
 @media only screen and (max-width: 900px) {
