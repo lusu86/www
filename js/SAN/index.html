@@ -14,14 +14,14 @@
         <div class="TTimer">
             <div class="timer">
                 <div class="timer-Tabata">Tabata
-                    <div>04:10</div>
+                    <div id="mainCounter"><h2>04:10</h2></div>
                 </div>
                 <div class="timer-CyclesTabatas">
                     <div class="timer-item">Cycles
-                        <div>04</div>
+                        <div id="countCycles"><h2>04</h2></div>
                     </div>
                     <div class="timer-item">Tabatas
-                        <div>01</div>
+                        <div id="countTabatas"><h2>02</h2></div>
                     </div>
                 </div>
 
@@ -29,33 +29,33 @@
             <div class="settings">
                 <div class="settings-item">
                     <div class="settings-txt">Prepare</div>
-                    <div class="settings-ma">-</div>
-                    <div class="settings-time">00:10</div>
-                    <div class="settings-ma">+</div>
+                    <div class="settings-ma" onclick='valueMinus("itemPrepare")'>-</div>
+                    <input type="text" class="settings-time" id="itemPrepare" value="30" readonly></input>
+                    <div class="settings-ma" onclick='valueAdd("itemPrepare")'>+</div>
                 </div>
                 <div class="settings-item">
                     <div class="settings-txt">Work</div>
-                    <div class="settings-ma">-</div>
-                    <div class="settings-time">00:20</div>
-                    <div class="settings-ma">+</div>
+                    <div class="settings-ma" onclick='valueMinus("itemWork")'>-</div>
+                    <input type="text" class="settings-time" id="itemWork" value="20" readonly></input>
+                    <div class="settings-ma" onclick='valueAdd("itemWork")'>+</div>
                 </div>
                 <div class="settings-item">
                     <div class="settings-txt">Rest</div>
-                    <div class="settings-ma">-</div>
-                    <div class="settings-time">00:10</div>
-                    <div class="settings-ma">+</div>
+                    <div class="settings-ma" onclick='valueMinus("itemRest")'>-</div>
+                    <input type="text" class="settings-time" id="itemRest" value="10" readonly></input>
+                    <div class="settings-ma" onclick='valueAdd("itemRest")'>+</div>
                 </div>
                 <div class="settings-item">
                     <div class="settings-txt">Cycles</div>
-                    <div class="settings-ma">-</div>
-                    <div class="settings-time">08</div>
-                    <div class="settings-ma">+</div>
+                    <div class="settings-ma" onclick='valueMinus("itemCycles")'>-</div>
+                    <input type="text" class="settings-time" id="itemCycles" value="8" readonly></input>
+                    <div class="settings-ma" onclick='valueAdd("itemCycles")'>+</div>
                 </div>
                 <div class="settings-item">
                     <div class="settings-txt">Tabatas</div>
-                    <div class="settings-ma">-</div>
-                    <div class="settings-time">01</div>
-                    <div class="settings-ma">+</div>
+                    <div class="settings-ma" onclick='valueMinus("itemTabatas")'>-</div>
+                    <input type="text" class="settings-time" id="itemTabatas" value="2" readonly></input>
+                    <div class="settings-ma" onclick='valueAdd("itemTabatas")'>+</div>
                 </div>
                 <div id="btn-start-stop">
                     <div class="btn-start" onclick="changeBtnStartToStop()">START</div>
