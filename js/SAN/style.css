@@ -50,7 +50,7 @@ h2{
 .timer-Tabata{
     width: 100%;
     padding: 20px;
-    border: 20px inset black;
+    border: 20px inset black;;
 }
 
 .timer-CyclesTabatas{
@@ -147,5 +147,9 @@ h2{
        width: 100vw;
        height: 40%;
        padding: 0 9vw 0;
+   }
+   
+   h2{
+	font-size: 2em;
    }
   }
